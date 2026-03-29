@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<button id="clickBtn">Click Me</button>
+<input type="text" id="inputBox" placeholder="Type something">
+
+<script>
+$(function(){
+
+    $("#clickBtn").click(function(){
+        alert("Button Clicked!");
+    });
+
+    $("#inputBox").focus(function(){
+        $(this).css("background","yellow");
+    });
+
+    $("#inputBox").blur(function(){
+        $(this).css("background","white");
+    });
+
+});
+</script>
+
+</body>
+</html>

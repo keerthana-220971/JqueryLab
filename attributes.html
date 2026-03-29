@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attributes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<input type="text" id="name" value="Keerthana">
+<button id="getVal">Get Value</button>
+
+<br><br>
+
+<img id="img" src="https://via.placeholder.com/100">
+<button id="changeImg">Change Image</button>
+
+<script>
+$(function(){
+    $("#getVal").click(function(){
+        alert($("#name").val());
+    });
+
+    $("#changeImg").click(function(){
+        $("#img").attr("src","https://via.placeholder.com/150");
+    });
+});
+</script>
+
+</body>
+</html>
